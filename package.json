@@ -20,6 +20,7 @@
     "semantic-release": "semantic-release",
     "test": "tslint --project . && ava"
   },
+  "sideEffects": false,
   "dependencies": {
     "@types/is-integer": "^1.0.0",
     "is-integer": "^1.0.7",
