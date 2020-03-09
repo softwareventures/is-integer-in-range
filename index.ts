@@ -14,3 +14,15 @@ export default function isIntegerInRange(value: number, start: number, end: numb
         && value >= start
         && value <= end;
 }
+
+/**
+ * Curried variant of isIntegerInRange.
+ *
+ * Takes a range specified as a start and end value, and returns a function
+ * that tests if a specified value is within the range.
+ *
+ * The range is inclusive of the start and end values.
+ */
+export function isIntegerInRangeFn(start: number, end: number): (value: number) => boolean {
+    return value => isIntegerInRange(value, start, end);
+}
