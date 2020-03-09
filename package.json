@@ -1,0 +1,51 @@
+{
+  "name": "is-integer-in-range",
+  "version": "0.0.0-development",
+  "description": "Tests if a value is an integer in a specified range",
+  "keywords": [
+    "TypeScript",
+    "is-integer-in-range",
+    "integer-range",
+    "integer",
+    "number",
+    "range"
+  ],
+  "author": "Daniel Cassidy <mail@danielcassidy.me.uk>",
+  "homepage": "https://github.com/softwareventures/is-integer-in-range",
+  "bugs": "https://github.com/softwareventures/is-integer-in-range",
+  "repository": "github:softwareventures/is-integer-in-range",
+  "license": "ISC",
+  "scripts": {
+    "prepare": "tsc",
+    "semantic-release": "semantic-release",
+    "test": "tslint --project . && ava"
+  },
+  "dependencies": {
+    "@types/is-integer": "^1.0.0",
+    "is-integer": "^1.0.7",
+    "tslib": "1.11.1"
+  },
+  "devDependencies": {
+    "@softwareventures/tsconfig": "2.2.0",
+    "@softwareventures/tslint-rules": "0.7.1",
+    "ava": "3.5.0",
+    "cz-conventional-changelog": "3.1.0",
+    "semantic-release": "17.0.4",
+    "ts-node": "8.6.2",
+    "tslint": "5.20.1",
+    "typescript": "3.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
