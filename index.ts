@@ -19,7 +19,7 @@ export default function isIntegerInRange(value: number, start: number, end: numb
  * Curried variant of isIntegerInRange.
  *
  * Takes a range specified as a start and end value, and returns a function
- * that tests if a specified value is within the range.
+ * that tests if a specified value is an integer within the range.
  *
  * The range is inclusive of the start and end values.
  */
