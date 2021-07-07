@@ -4,9 +4,9 @@
   "description": "Tests if a value is an integer in a specified range",
   "keywords": [
     "TypeScript",
-    "is-integer-in-range",
-    "integer-range",
     "integer",
+    "integer-range",
+    "is-integer-in-range",
     "number",
     "range"
   ],
