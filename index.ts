@@ -10,9 +10,7 @@ export default function isIntegerInRange(value: number, start: number, end: numb
         throw new TypeError("Expected start and end to be numbers");
     }
 
-    return isInteger(value)
-        && value >= start
-        && value <= end;
+    return isInteger(value) && value >= start && value <= end;
 }
 
 /**
